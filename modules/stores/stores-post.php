@@ -20,7 +20,7 @@ function pedigree_register_stores_post_type() {
 			'has_archive' 			=> false,
 			'rewrite' 				=> array('slug' => 'tiendas'),
 			'menu_position'			=> 5,
-			'menu_icon'				=> PEDIGREE_PLUGIN_URL . 'assets/img/stores-icon.png',
+			'menu_icon'				=> PEDIGREE_PLUGIN_URL . 'assets/img/eshop-icon.png',
 			'supports'				=> array('title', 'editor', 'excerpt', 'thumbnail'),
 			'taxonomies'          	=> array(),
 			//'register_meta_box_cb' 	=> 'pedigree_products_add_metaboxes',

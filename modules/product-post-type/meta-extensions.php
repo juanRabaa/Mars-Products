@@ -22,7 +22,35 @@ if( $screen->id == 'pedigree_product' ){
     ));
 
     new RB_Metabox('pedigree_product_guide', array(
-        'title'			=> __('Guía de alimentación', 'pedigree-genosha'),
+        'title'			=> __('Guía de alimentación (Cachorro)', 'pedigree-genosha'),
+        'admin_page'	=> 'pedigree_product',
+        'context'		=> 'normal',
+        'priority'		=> 'high',
+        'classes'		=> array('pedigree-metabox'),
+    ), array(
+        'controls'		=> array(
+    		'guide'	=> array(
+    			'type'			=> 'RB_tinymce_control',
+            ),
+        ),
+    ));
+
+    new RB_Metabox('pedigree_product_guide_adult', array(
+        'title'			=> __('Guía de alimentación (Adulto)', 'pedigree-genosha'),
+        'admin_page'	=> 'pedigree_product',
+        'context'		=> 'normal',
+        'priority'		=> 'high',
+        'classes'		=> array('pedigree-metabox'),
+    ), array(
+        'controls'		=> array(
+    		'guide'	=> array(
+    			'type'			=> 'RB_tinymce_control',
+            ),
+        ),
+    ));
+
+    new RB_Metabox('pedigree_product_guide_senior', array(
+        'title'			=> __('Guía de alimentación (Adulto +7)', 'pedigree-genosha'),
         'admin_page'	=> 'pedigree_product',
         'context'		=> 'normal',
         'priority'		=> 'high',

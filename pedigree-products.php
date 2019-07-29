@@ -52,6 +52,8 @@ require_once PEDIGREE_PLUGIN_PATH . 'inc/RB_Forms_Fields/RB_Form_Fields_Admin.ph
 require_once PEDIGREE_PLUGIN_PATH . 'modules/product-category-tax/product-category.php';
 require_once PEDIGREE_PLUGIN_PATH . 'modules/product-post-type/product-post.php';
 require_once PEDIGREE_PLUGIN_PATH . 'modules/stores/stores-post.php';
+require_once PEDIGREE_PLUGIN_PATH . 'modules/map-stores/stores-post.php';
+require_once PEDIGREE_PLUGIN_PATH . 'modules/fantasy-name-tax/module.php';
 
 // =============================================================================
 // FUNCTIONS

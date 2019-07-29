@@ -5,8 +5,9 @@ function pedigree_register_products_category_tax() {
         'pedigree-product-category',
         'pedigree_product',
         array(
-            'label' => __( 'Categorías' ),
-            'rewrite' => array( 'slug' => 'product-category' ),
+            'hierarchical'      => true,
+            'label'             => __( 'Categorías' ),
+            'rewrite'           => array( 'slug' => 'product-category' ),
         )
     );
 }
