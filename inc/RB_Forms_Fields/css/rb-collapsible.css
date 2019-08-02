@@ -1,0 +1,46 @@
+.rb-collapsible > .rb-collapsible-header .button {
+    display: flex;
+    align-items:  center;
+    justify-content:  center;
+    font-size: 3rem;
+}
+
+.rb-collapsible > .rb-collapsible-header {
+    cursor:  pointer;
+    width: 100%;
+    background-color: transparent;
+    border-bottom: 0;
+    box-sizing: border-box;
+}
+
+.rb-collapsible > .rb-collapsible-body {
+    display: none;
+    padding-top:  1rem;
+    overflow: auto;
+}
+
+.rb-collapsible.active > .rb-collapsible-body {
+    display: block;
+}
+
+.rb-collapsible.active > .rb-collapsible-header .button > i, .rb-collapsible.opening > .rb-collapsible-header .button > i {
+    transform: rotate(-90deg);
+}
+
+.rb-collapsible > .rb-collapsible-header .button > i {
+    transition:  all 0.3s;
+}
+
+[data-rb-accordion] {
+    margin-bottom: 2rem;
+}
+
+.rb-collapsible{
+    transition: box-shadow 0.3s;
+}
+
+.rb-collapsible.active {
+    box-shadow: -3px 7px 20px 0px #00000082;
+    position: relative;
+    z-index: 1;
+}
