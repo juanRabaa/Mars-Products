@@ -7,6 +7,49 @@ if( $screen->id == 'pedigree_product' ){
     // =============================================================================
     // METABOXES
     // =============================================================================
+
+    new RB_Metabox('pedigree_product_description_puppy', array(
+        'title'			=> __('Descripción (Cachorro)', 'pedigree-genosha'),
+        'admin_page'	=> 'pedigree_product',
+        'context'		=> 'normal',
+        'priority'		=> 'high',
+        'classes'		=> array('pedigree-metabox'),
+    ), array(
+        'controls'		=> array(
+    		'guide'	=> array(
+    			'type'			=> 'RB_tinymce_control',
+            ),
+        ),
+    ));
+
+    new RB_Metabox('pedigree_product_description_adult', array(
+        'title'			=> __('Descripción (Adulto)', 'pedigree-genosha'),
+        'admin_page'	=> 'pedigree_product',
+        'context'		=> 'normal',
+        'priority'		=> 'high',
+        'classes'		=> array('pedigree-metabox'),
+    ), array(
+        'controls'		=> array(
+    		'guide'	=> array(
+    			'type'			=> 'RB_tinymce_control',
+            ),
+        ),
+    ));
+
+    new RB_Metabox('pedigree_product_description_senior', array(
+        'title'			=> __('Descripción (Adulto + 7)', 'pedigree-genosha'),
+        'admin_page'	=> 'pedigree_product',
+        'context'		=> 'normal',
+        'priority'		=> 'high',
+        'classes'		=> array('pedigree-metabox'),
+    ), array(
+        'controls'		=> array(
+            'guide'	=> array(
+                'type'			=> 'RB_tinymce_control',
+            ),
+        ),
+    ));
+
     new RB_Metabox('pedigree_product_ingredients', array(
         'title'			=> __('Ingredientes', 'pedigree-genosha'),
         'admin_page'	=> 'pedigree_product',
@@ -22,6 +65,20 @@ if( $screen->id == 'pedigree_product' ){
     ));
 
     new RB_Metabox('pedigree_product_guide', array(
+        'title'			=> __('Guía de alimentación (General)', 'pedigree-genosha'),
+        'admin_page'	=> 'pedigree_product',
+        'context'		=> 'normal',
+        'priority'		=> 'high',
+        'classes'		=> array('pedigree-metabox'),
+    ), array(
+        'controls'		=> array(
+    		'guide'	=> array(
+    			'type'			=> 'RB_tinymce_control',
+            ),
+        ),
+    ));
+
+    new RB_Metabox('pedigree_product_guide_puppy', array(
         'title'			=> __('Guía de alimentación (Cachorro)', 'pedigree-genosha'),
         'admin_page'	=> 'pedigree_product',
         'context'		=> 'normal',
